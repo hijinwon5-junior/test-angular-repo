@@ -13,7 +13,7 @@ phases:
       - ng build -c production
       - echo "Build completed."
     finally:
-      - echo This is the finally block execution!
+      - echo This is the finally block execution! It will run regardless of the build success or failure.
 artifacts:
   base-directory: dist/my-angular-project
   files:
